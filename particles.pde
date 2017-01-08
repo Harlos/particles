@@ -2,7 +2,7 @@ import java.util.Iterator;
 ArrayList<ParticleSystem> arr;
 
 void setup() {
-  size(500, 500, P2D);
+  size(500, 500, FX2D );
   arr = new ArrayList<ParticleSystem>();
   noStroke();
 }
@@ -19,4 +19,5 @@ void draw() {
     ParticleSystem ps = it.next();
     ps.go();
   }
+  println(frameRate);
 }
